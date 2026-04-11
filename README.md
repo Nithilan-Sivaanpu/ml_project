@@ -6,7 +6,7 @@ data/
 output/
 tests/
 ## Auteur
-Your Name
+Sivaanpu Nithilan
 ## Version Python
 Compatible avec Python 3.10.
 ## Description
