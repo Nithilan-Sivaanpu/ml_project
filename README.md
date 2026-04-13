@@ -1,43 +1,48 @@
 # My ML Project - Pipeline de traduction automatique du français (FR) à l'anglais (EN).
+
+## Description 
+
 Ce Projet a été généré avec Cookiecutter et intègre un pipeline complet de traduction automatique et d'évaluation de la qualité des traductions.
 
-## Structure du projet :
+## Structure du projet 
 
 ml_project/
-    .github/
-        workflows/
-            CI.yml  # Pipeline CI/CD GitHub Actions
-    src/
-         loaders/ # Chargement des données (CSV, JSON)
-         processors/ # Prétraitement des données : transformation et nettoyage des donnnées
-         translators/ #Interface avec les modèles de traduction HuggingFace
-         evaluators/ #Calcul des métriques de qualité (BLEU, chrf)
-         orchestrator/ #Coordination du pipeline : module principal qui coordonne toutes les étapes du pipeline
-         config.py #Configuration centralisée
-         main.py #Point d'entrée principal
-    data/
-        sample.json #Données d'exemple
-        sample02.json #Données d'exemple 2
-    output/ #Traductions générés par le pipeline
-    tests/
-        test_basic.py #Test unitaires
-    README.md #Information sur le déroulement du projet
-    pyproject.toml
-    .gitignore
+├──.github/
+│     └── workflows/
+│         └── CI.yml  #Pipeline CI/CD GitHub Actions
+├──src/
+│    ├──loaders/  #Chargement des données (CSV, JSON)
+│    ├──processors/  #Prétraitement des données : transformation et nettoyage des donnnées
+│    ├──translators/  #Interface avec les modèles de traduction HuggingFace
+│    ├──evaluators/  #Calcul des métriques de qualité (BLEU, chrf)
+│    ├── orchestrator/  #Coordination du pipeline : module principal qui coordonne toutes les étapes du pipeline
+│    ├──config.py  #Configuration centralisée
+│    └──main.py  #Point d'entrée principal
+├──data/
+│    ├── sample.json  #Données d'exemple
+│    └──sample02.json  #Données d'exemple 2
+├──output/  #Traductions générés par le pipeline
+├──tests/
+│    └──test_basic.py  #Test unitaires
+├──README.md  #Information sur le déroulement du projet
+├──pyproject.toml
+└──.gitignore
 
-## Prérequis : 
+## Prérequis 
+
 - Python 3.10+
 - pip
 
-## Installation : 
+## Installation 
 
-### 1. Cloner le dépôt :
+### 1. Cloner le dépôt 
 
-bash
+Terminal Powershell ou bash
+
 git clone https://github.com/Nithilan-Sivaanpu/ml_project.git
 cd ml_project
 
-### 2. Créer et activer l'environnement virtuel :
+### 2. Créer et activer l'environnement virtuel 
 
 python -m venv .venv
 
@@ -47,15 +52,15 @@ python -m venv .venv
 #Linux / macOS
 source .venv/bin/activate
 
-### 3. Installer les dépendances : 
+### 3. Installer les dépendances  
 
 pip install -r requirement.txt
 
-### 4. Lancer le pipeline : 
+### 4. Lancer le pipeline  
 
 python src/main.py
 
-### Résultat attendu : 
+### Résultat attendu  
 
 Loaded 20 rows.
 Traduction: 100%|██████████| 15/15
@@ -64,7 +69,7 @@ Translation quality metrics:
 BLEU: 41.61
 chrF: 70.46
 
-## Tests à effectuer :
+## Tests à effectuer 
 
 pytest
 
@@ -79,7 +84,7 @@ Résultat attendu :
 
 1 passed in 0.01s
 
-## Formatage du code :
+## Formatage du code 
 
 "Black" est un outil de formatage automatique du code Python. Il garantit que tout le code respecte un style uniforme et lisible, sans avoir à se soucier manuellement de l'indentation, des espaces ou des sauts de ligne, afin de produire un code professionnel et conforme aux standards Python
 
@@ -95,6 +100,7 @@ All done! ✨ 🍰 ✨
 #Appliquer
 
 black .
+
 ## CI/CD
 
 Le projet intègre un pipeline GitHub Actions qui s'exécute automatiquement à chaque push sur main :
@@ -102,10 +108,11 @@ Le projet intègre un pipeline GitHub Actions qui s'exécute automatiquement à 
 - Exécution des tests pytest
 - Vérification du formatage black
 
-## Auteur
+## Auteur 
+
 Sivaanpu Nithilan
 
-## Modèle utilisé : 
+## Modèle utilisé 
 
 - **Helsinki-NLP/opus-mt-fr-en** — Modèle de traduction français → anglais basé sur l'architecture Marian NMT
 
