@@ -6,6 +6,7 @@ Ce Projet a été généré avec Cookiecutter et intègre un pipeline complet de
 
 ## Structure du projet 
 
+```
 ml_project/
 ├──.github/
 │     └── workflows/
@@ -27,6 +28,7 @@ ml_project/
 ├──README.md  #Information sur le déroulement du projet
 ├──pyproject.toml
 └──.gitignore
+```
 
 ## Prérequis 
 
