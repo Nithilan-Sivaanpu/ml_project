@@ -10,22 +10,24 @@ Ce Projet a été généré avec Cookiecutter et intègre un pipeline complet de
 ml_project/
 ├──.github/
 │     └── workflows/
-│         └── CI.yml  #Pipeline CI/CD GitHub Actions
+│         └── CI.yml  # Pipeline CI/CD GitHub Actions
 ├──src/
-│    ├──loaders/  #Chargement des données (CSV, JSON)
-│    ├──processors/  #Prétraitement des données : transformation et nettoyage des donnnées
-│    ├──translators/  #Interface avec les modèles de traduction HuggingFace
-│    ├──evaluators/  #Calcul des métriques de qualité (BLEU, chrf)
-│    ├── orchestrator/  #Coordination du pipeline : module principal qui coordonne toutes les étapes du pipeline
-│    ├──config.py  #Configuration centralisée
-│    └──main.py  #Point d'entrée principal
+│    ├──loaders/  # Chargement des données (CSV, JSON)
+│    ├──processors/  # Prétraitement des données : transformation et nettoyage des donnnées
+│    ├──translators/  # Interface avec les modèles de traduction HuggingFace
+│    ├──evaluators/  # Calcul des métriques de qualité (BLEU, chrf)
+│    ├── orchestrator/  # Coordination du pipeline : module principal qui coordonne toutes les étapes du pipeline
+│    ├──config.py  # Configuration centralisée
+│    └──main.py  # Point d'entrée principal
 ├──data/
-│    ├── sample.json  #Données d'exemple
-│    └──sample02.json  #Données d'exemple 2
-├──output/  #Traductions générés par le pipeline
+│    ├── sample.json  # Données d'exemple
+│    └──sample02.json  # Données d'exemple 2
+├──output/  # Données chargées
+│           # Données nettoyées
+│           # Traductions générés par le pipeline
 ├──tests/
-│    └──test_basic.py  #Test unitaires
-├──README.md  #Information sur le déroulement du projet
+│    └──test_basic.py  # Test unitaires
+├──README.md  # Information sur le déroulement du projet
 ├──pyproject.toml
 └──.gitignore
 ```
