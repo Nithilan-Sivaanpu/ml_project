@@ -20,11 +20,12 @@ ml_project/
 │    ├──config.py  # Configuration centralisée
 │    └──main.py  # Point d'entrée principal
 ├──data/
-│    ├── sample.json  # Données d'exemple
+│    ├── sample.json   # Données d'exemple
 │    └──sample02.json  # Données d'exemple 2
-├──output/  # Données chargées
-│           # Données nettoyées
-│           # Traductions générés par le pipeline
+├──output/    # Résultats générés par le pipeline
+     ├── 01_loaded.csv   # Données chargées
+│    ├── 02_cleaned.csv  # Données nettoyées
+│    └── translated.csv  # Traductions générés par le pipeline
 ├──tests/
 │    └──test_basic.py  # Test unitaires
 ├──README.md  # Information sur le déroulement du projet
